@@ -602,6 +602,93 @@ h3 {
   color: #475569;
 }
 
+/* ---------- Fund Hero (centrato, illustrazione grande) ---------- */
+.fund-hero {
+  text-align: center;
+  padding: 40px 20px 32px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.fund-hero--emerald { background: linear-gradient(160deg, #ecfdf5 0%, #d1fae5 100%); }
+.fund-hero--indigo { background: linear-gradient(160deg, #eef2ff 0%, #c7d2fe 100%); }
+.fund-hero--amber { background: linear-gradient(160deg, #fffbeb 0%, #fde68a 100%); }
+
+.fund-illustration {
+  max-width: 520px;
+  margin: 0 auto 24px;
+}
+
+.fund-illustration svg {
+  width: 100%;
+  height: auto;
+}
+
+.fund-badge-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 5px 14px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  color: #059669;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.fund-badge-label--indigo { color: #4f46e5; }
+.fund-badge-label--amber { color: #d97706; }
+
+.fund-title {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  max-width: 600px;
+  margin: 0 auto 12px;
+}
+
+.fund-subtitle {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.fund-body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.fund-features-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+.fund-case {
+  display: flex;
+  justify-content: center;
+}
+
+.case-card--large {
+  max-width: 560px;
+  width: 100%;
+}
+
+.case-card--large .case-scenario {
+  font-size: 0.95rem;
+}
+
+.case-card--large .case-val {
+  font-size: 0.9rem;
+}
+
+.case-card--large .case-val--big {
+  font-size: 1.15rem;
+}
+
 /* ---------- Roles Grid (Cosa fai tu / Unilavoro) ---------- */
 .roles-grid {
   display: grid;
@@ -1120,6 +1207,20 @@ h3 {
   .roles-grid {
     grid-template-columns: 1fr 1fr;
     gap: 24px;
+  }
+
+  .fund-body {
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .fund-features {
+    flex: 1;
+  }
+
+  .fund-case {
+    flex: 0 0 50%;
   }
 
   .tool-section {
